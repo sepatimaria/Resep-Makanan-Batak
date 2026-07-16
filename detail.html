@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESEP DETAIL — MAR CULINARY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body class="detail-page-body">
+
+    <div class="ulos-overlay-bg"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-scrolled" id="mainNavbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+            <img src="assets/images/logo.png" alt="Mar Culinary Logo" style="height: 100px; width: auto;">
+        </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html" class="active">Explore</a></li>
+                <li><a href="index.html#tentang">Tentang Batak</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="favorite-toggle-btn glass" id="recipeFavBtn">❤️ Simpan Favorit</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- DYNAMIC DETAIL VIEW CONTAINER -->
+    <div id="detailContainer">
+        <!-- Struktur diisi penuh oleh js/app.js berbasis parameter ?id=nama-id -->
+        <div class="container-editorial" style="padding: 120px 20px; text-align: center;">
+            <p>Mengambil data arsip resep adat dari server lokal...</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-premium">
+        <div class="footer-bottom">
+            <p>&copy; 2024 MAR CULINARY. Premium Culinary Heritage System.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/darkmode.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

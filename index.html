@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAR CULINARY — Premium Batak Heritage Culinary</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-content">
+            <h1 class="gorga-logo-text">MAR CULINARY</h1>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Background Transparan Motif Ulos Ulas -->
+    <div class="ulos-overlay-bg"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="mainNavbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+            <img src="assets/images/logo.png" alt="Mar Culinary Logo" style="height: 100px; width: auto;">
+        </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="recipes.html?filter=all">Semua Menu</a></li>
+                <li><a href="#tentang">Tentang Batak</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+            </ul>
+            <div class="nav-actions">
+            <a href="recipes.html" class="nav-action-btn" title="Cari">
+                <span class="icon">🔍</span>
+            </a>
+
+            <a href="recipes.html?view=favorites" class="nav-action-btn" title="Favorit">
+                <span class="icon">❤️</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-bg-slider"
+        style="background-image:
+        linear-gradient(rgba(18,18,18,0.5), rgba(18,18,18,0.8)),
+        url('assets/images/dp.jpeg');">
+        </div>
+        <div class="floating-bubble bubble-1"></div>
+        <div class="floating-bubble bubble-2"></div>
+        <div class="warm-light-source"></div>
+        
+        <div class="hero-content">
+            <h1 class="reveal-text">Cita Rasa Batak<br><span class="highlight-gold">yang Tak Pernah Hilang</span></h1>
+            <p class="reveal-subtext">Nikmati warisan kuliner Batak yang kaya rempah, penuh filosofi, dan diwariskan turun-temurun melalui presentasi visual kelas dunia.</p>
+            <div class="hero-buttons">
+                <a href="recipes.html" class="btn btn-primary ripple">Jelajahi Kuliner</a>
+                <a href="recipes.html" class="btn btn-secondary glass">Lihat Resep</a>
+            </div>
+        </div>
+
+        <!-- Floating Cards Info Apple Style -->
+        <div class="hero-floating-cards">
+            <div class="f-card glass-card">
+                <span class="f-icon">⭐</span>
+                <div>
+                    <h4>10+ Kuliner</h4>
+                    <p>Warisan Otentik</p>
+                </div>
+            </div>
+            <div class="f-card glass-card">
+                <span class="f-icon">🌶️</span>
+                <div>
+                    <h4>Andaliman</h4>
+                    <p>Sensasi Getir Khas</p>
+                </div>
+            </div>
+            <div class="f-card glass-card">
+                <span class="f-icon">📍</span>
+                <div>
+                    <h4>Sumatera Utara</h4>
+                    <p>Tanah Leluhur Toba</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TENTANG KULINER BATAK (National Geographic Style) -->
+    <section class="section-tentang" id="tentang">
+        <div class="container-editorial">
+            <div class="editorial-grid">
+                <div class="editorial-text-panel">
+                    <span class="section-tag">HERITAGE & PHILOSOPHY</span>
+                    <h2>Harmoni Tanah Vulkanik,<br>Rempah Magic, dan Ritual Adat</h2>
+                    <p class="lead-para">Kuliner Batak bukan sekadar urusan memuaskan lapar perut. Setiap potongan daging ikan Mas dalam belanga Na Niarsik atau sengatan ajaib Andaliman menyimpan matriks kode budaya kuno yang menghubungkan manusia dengan leluhur, alam semesta, dan tatanan sosial kekeluargaan.</p>
+                    <p>Dari tepian Danau Toba purba hingga arsitektur megah Rumah Bolon Samosir, makanan adalah medium sakral penghormatan status sosial, restu berkat kehidupan, dan pembungkus erat tali persaudaraan *Dalihan Na Tolu* yang abadi melintasi zaman digital modern.</p>
+                </div>
+                <div class="editorial-image-panel">
+                    <div class="img-wrapper wrap-1 soft-shadow-trigger">
+                        <img src="assets/images/DanauToba.jpeg" alt="Danau Toba Heritage">
+                        <div class="img-caption">Danau Toba — Episentrum kultur dan kesuburan pangan Batak.</div>
+                    </div>
+                    <div class="img-wrapper wrap-2 soft-shadow-trigger">
+                        <img src="assets/images/RumahBolon.jpeg" alt="Rumah Bolon & Ulos">
+                        <div class="img-caption">Rumah Bolon — Simbol kemegahan arsitektur tata ruang adat.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPLORE MENU PREVIEW (Airbnb Experience Grid Style) -->
+    <section class="section-explore">
+        <div class="container-fluid">
+            <div class="section-header-center">
+                <h2>Kurasi Rasa Mahakarya Toba</h2>
+                <p>Jelajahi kelezatan gastronomi premium Batak yang dikurasi secara ketat demi menjaga keaslian cita rasa leluhur.</p>
+            </div>
+            
+            <div class="modern-menu-grid" id="featuredRecipesGrid">
+                <!-- Diisi Dinamis oleh JavaScript app.js (Menampilkan 4 Lauk Utama Terpopuler) -->
+            </div>
+
+            <div class="center-action-wrapper">
+                <a href="recipes.html" class="btn btn-primary outline-btn btn-large">Lihat Seluruh Menu Resep</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI MASONRY (Pinterest Premium Style) -->
+    <section class="section-galeri" id="galeri">
+        <div class="container-fluid">
+            <div class="section-header-left">
+                <span class="section-tag">VISUAL GALLERY</span>
+                <h2>Ekspresi Estetika Kuliner</h2>
+            </div>
+            
+            <div class="masonry-gallery">
+                <div class="masonry-item item-tall">
+                    <img src="assets/images/arsik.jpeg" alt="Arsik Close up">
+                    <div class="masonry-overlay glass">
+                        <h3>Dengke Mas Na Niarsik</h3>
+                        <a href="detail.html?id=arsik" class="btn-text-arrow">Lihat Resep →</a>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <img src="assets/images/saksang.jpeg" alt="Saksang Culinary">
+                    <div class="masonry-overlay glass">
+                        <h3>Saksang Ayam Kampung</h3>
+                        <a href="detail.html?id=saksang" class="btn-text-arrow">Lihat Resep →</a>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <img src="assets/images/kopi.jpeg" alt="Kopi Lintong Brew">
+                    <div class="masonry-overlay glass">
+                        <h3>Kopi Arabika Lintong</h3>
+                        <a href="detail.html?id=kopi-lintong" class="btn-text-arrow">Lihat Resep →</a>
+                    </div>
+                </div>
+                <div class="masonry-item item-wide">
+                    <img src="assets/images/naniura.jpeg" alt="Naniura Fine Dish">
+                    <div class="masonry-overlay glass">
+                        <h3>Dengke Na Niura</h3>
+                        <a href="detail.html?id=naniura" class="btn-text-arrow">Lihat Resep →</a>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <img src="assets/images/mieg.jpeg" alt="Mie Gomak Traditional">
+                    <div class="masonry-overlay glass">
+                        <h3>Mie Gomak Premium</h3>
+                        <a href="detail.html?id=mie-gomak" class="btn-text-arrow">Lihat Resep →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-premium">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>MAR CULINARY</h2>
+                <p>Melestarikan cita rasa luhur seni memasak Batak Nusantara ke kancah peradaban gastronomi dunia internasional.</p>
+            </div>
+            <div class="footer-links-group">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Explore Resep</a></li>
+                    <li><a href="#tentang">Filosofi Adat</a></li>
+                </ul>
+            </div>  
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MAR CULINARY. Crafted for World Heritage Culinary Presentation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script>
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const loader = document.getElementById('loadingScreen');
+            if (loader) {
+                loader.style.opacity = '0';
+                setTimeout(() => { loader.style.display = 'none'; }, 500);
+            }
+        }, 3000);
+    });
+</script>
+</body>
+</html>

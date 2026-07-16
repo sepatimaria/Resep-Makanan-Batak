@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLORE HERITAGE RECIPES — MAR CULINARY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body class="bg-light-magazine">
+
+    <!-- Transparent Ulos background -->
+    <div class="ulos-overlay-bg"></div>
+
+    <!-- NAVBAR -->
+<nav class="navbar navbar-scrolled" id="mainNavbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/images/logo.png" alt="Mar Culinary Logo" style="height: 100px; width: auto;">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html?filter=all">Semua Menu</a></li>
+            <li><a href="index.html#tentang">Tentang Batak</a></li>
+            <li><a href="index.html#galeri">Galeri</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="recipes.html" class="nav-action-btn" title="Cari">
+        <span class="icon">🔍</span>
+        </a>
+
+        <a href="recipes.html?view=favorites" class="nav-action-btn" title="Favorit">
+            <span class="icon">❤️</span>
+        </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- SEARCH & FILTER HEADER (Apple Clean Workspace Style) -->
+    <header class="recipes-hero-header">
+        <div class="container-fluid">
+            <h1>Kurasi Khazanah 13 Resep Kuliner</h1>
+            <p>Gunakan sistem filter canggih untuk menyaring arsip resep memasak tradisional Batak secara presisi.</p>
+            
+            <!-- Search Bar Modern -->
+            <div class="search-wrapper glass">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Cari berdasarkan nama makanan, daerah asal, kategori, atau bahan rempah...">
+            </div>
+
+            <!-- Filter Badges Panel -->
+            <div class="filter-panel-wrapper">
+                <div class="filter-group">
+                    <span class="filter-label">Kategori:</span>
+                    <button class="filter-badge active" data-filter="kategori" data-value="all">Semua Kategori</button>
+                    <button class="filter-badge" data-filter="kategori" data-value="Makanan Utama">Makanan Utama</button>
+                    <button class="filter-badge" data-filter="kategori" data-value="Sayur">Sayur</button>
+                    <button class="filter-badge" data-filter="kategori" data-value="Sambal">Sambal</button>
+                    <button class="filter-badge" data-filter="kategori" data-value="Kue">Kue</button>
+                    <button class="filter-badge" data-filter="kategori" data-value="Minuman">Minuman</button>
+                </div>
+                <div class="filter-group margin-top-sm">
+                    <span class="filter-label">Rasa Pedas:</span>
+                    <button class="filter-badge active" data-filter="pedas" data-value="all">Semua Tingkat</button>
+                    <button class="filter-badge" data-filter="pedas" data-value="Pedas">Pedas / Sangat Pedas</button>
+                    <button class="filter-badge" data-filter="pedas" data-value="Tidak Pedas">Tidak Pedas</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN DYNAMIC GRID -->
+    <main class="recipes-catalog-section">
+        <div class="container-fluid">
+            <!-- Active Filter Status Bar -->
+            <div class="results-status-bar">
+                <p id="recipesCountText">Memuat bank data kuliner...</p>
+            </div>
+
+            <!-- Grid Container -->
+            <div class="modern-menu-grid" id="mainRecipesCatalogGrid">
+                <!-- Diisi sepenuhnya dinamis oleh js/recipes.js dari data/recipes.json -->
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-premium">
+        <div class="footer-bottom">
+            <p>&copy; 2024 MAR CULINARY. Premium Culinary Heritage System.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/darkmode.js"></script>
+    <script src="js/recipes.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
